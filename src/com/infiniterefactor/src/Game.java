@@ -39,8 +39,8 @@ public class Game {
     }
 
     public void renderConsole() {
-        for (int x = 0; x < board.getBoxArr().length; x++) {
-            for (int y = 0; y < board.getBoxArr()[x].length; y++) {
+        for (int y = 0; y < board.getBoxArr()[0].length; y++) {
+            for (int x = 0; x < board.getBoxArr().length; x++) {
                 Box box = board.getBoxArr()[x][y];
                 int code = intFromBooleanArray(new boolean[]{box.isTop(), box.isLeft(), box.isBottom(), box.isRight()});
                 System.out.print(code == 15 ? "o:" + board.getBoxArr()[x][y].getOwner() : code);

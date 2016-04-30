@@ -61,7 +61,7 @@ public class Box {
             case 3:
                 return left;
             default:
-                throw new Exception("");
+                throw new Exception("What's this???");
         }
     }
 
